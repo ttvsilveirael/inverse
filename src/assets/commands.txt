@@ -16,6 +16,7 @@ git checkout Nomedabranch                //mudar para uma branch ja existente No
 
 git branch                               //listar branches
 
+git reset --hard                         //reseta a sua branch na versao inicial
 
 NG == Angular 
 ng new nomerepositorio

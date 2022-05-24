@@ -6,6 +6,8 @@ import { Component, Input } from '@angular/core';
     styleUrls: ['./my_button.component.scss']
 })
 export class MyButtonComponent {
+
+    //Recebe a label do botão
     @Input()
     label: String = '';
 

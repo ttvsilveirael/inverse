@@ -1,0 +1,9 @@
+my-textinput{
+    margin-bottom: 50px;
+    &:first-of-type{
+        margin-bottom: 10px;
+    }
+    &:last-of-type{
+        margin-bottom: 25px;
+    }
+}
