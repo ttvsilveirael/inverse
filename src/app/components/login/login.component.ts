@@ -13,6 +13,14 @@ export class LoginComponent {
     localStorage.setItem('user', JSON.stringify(this.user));
   }
 
+  doLogin() {
+    this.user = new User('elsilveira', 'test123');
+    localStorage.setItem('user', JSON.stringify(this.user));
+  }
+
+  doLogout(){
+    localStorage.removeItem('user');
+  }
 }
 
 class User {
