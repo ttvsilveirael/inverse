@@ -10,8 +10,9 @@ export class LoginComponent {
 
   Login(username: String, password: String) {
     this.user = new User(username, password);
-    localStorage.setItem('user', JSON.stringify(this.user))
+    localStorage.setItem('user', JSON.stringify(this.user));
   }
+
 }
 
 class User {
