@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   constructor(public router: Router) { }
+  usernameError: Boolean = false;
+  passwordError: Boolean = false;
 
   ngOnInit(): void {
     this.user = new User('', '');
@@ -16,7 +18,6 @@ export class LoginComponent implements OnInit {
 
 
   setUsername(event: any) {
-    console.log(event);
     this.user?.setUsername(event);
   }
 
@@ -25,16 +26,22 @@ export class LoginComponent implements OnInit {
   }
 
   doLogin() {
+    this.usernameError = false;
+    this.passwordError = false;
+    
     if (this.user == null) {
       console.log("User not detected.");
-      return;
-    }
-    if (this.user?.password == null || this.user.password == '') {
-      console.log("Type a password");
+      this.usernameError = true;
       return;
     }
     if (this.user?.username == null || this.user.username == '') {
       console.log("Type a user");
+      this.usernameError = true;
+      return;
+    }
+    if (this.user?.password == null || this.user.password == '') {
+      console.log("Type a password");
+      this.passwordError = true;
       return;
     }
 
@@ -49,7 +56,7 @@ export class LoginComponent implements OnInit {
 class User {
   password: String;
   username: String;
-  
+
   constructor(username: String, password: String) {
     this.password = password;
     this.username = username;
