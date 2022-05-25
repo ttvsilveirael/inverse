@@ -1,9 +1,20 @@
-my-textinput{
-    margin-bottom: 50px;
-    &:first-of-type{
-        margin-bottom: 10px;
-    }
-    &:last-of-type{
-        margin-bottom: 25px;
-    }
+my-textinput {
+    margin: 15px;
+    display: block;
+}
+
+.login-container {
+    display: block;
+    padding: 40px;
+    margin-top: 21vh;
+    height: 200px;
+    width: 520px;
+    background: #c3c1c1;
+    margin: 21vh auto;
+    border-radius: 30px;
+}
+
+my-button {
+    margin-top: 30px;
+    display: block;
 }
