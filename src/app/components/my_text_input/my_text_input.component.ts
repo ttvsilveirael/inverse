@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input } from '@angular/core';
+
 
 @Component({
   selector: 'my-textinput',
@@ -6,9 +7,22 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./my_text_input.component.scss']
 })
 export class MyTextInputComponent {
-  value: string = '';
+  _value: string = '';
+  set value (newValue){
+    this.value= newValue;
+    this.valueCharged.emit(this._value);
+  }
 
-  @Input('password')
-  ispassword=false;
+  get value(){
+    return this._value;
+  }
+ @Input()
+  type:string ='text';
+@Input('type')
+inputType:string ='text';
+
+
+@Input()
+valueCharged = new EventEmitter();
   
 }
