@@ -13,7 +13,7 @@ export class TwitchPlayerComponent implements OnInit {
     history = [''];
 
     @Input()
-    canal = 'dizeritus';
+    canal = 'silveirael';
     setNewStream(event: string) {
         if (event != this.newStream && event != this.canal) {
             this.newStream = event;
