@@ -11,4 +11,7 @@ export class MyButtonComponent {
     @Input()
     label: String = '';
 
+    @Input()
+    disabled = false;
+
 }

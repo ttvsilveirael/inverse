@@ -1,0 +1,17 @@
+<div id="twitch-embed">
+</div>
+<iframe id="chat_embed" src="https://www.twitch.tv/embed/dizeritus/chat?parent=localhost" height="500" width="350">
+</iframe>
+<my-textinput [value]="'twitch.tv/' + canal" (valueChanged)="setNewStream($event)" [placeholder]="'Stream nickname'">
+</my-textinput>
+<div class="flex">
+    <my-button [disabled]="lastStream == ''" (click)="voltar()" [label]="'Voltar'"></my-button>
+    <my-button (click)="abrirStream()" [label]="'Abrir'"></my-button>
+
+    <div class="history">
+        <h5>Historico</h5>
+        <div *ngFor="let stream of history; let x = index;" class="stream">
+            <div *ngIf="stream != ''" [ngClass]="x % 2 == 0 ? 'black':'white'" class="history-tile" (click)="abrirStream(stream)">{{stream}}</div>
+        </div>
+    </div>
+</div>

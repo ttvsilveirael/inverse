@@ -10,6 +10,7 @@ import { MyButtonComponent } from "./my_button/my_button.component";
 import { MyImageComponent } from "./my_image/my_image.component";
 import { MyTextInputComponent } from "./my_text_input/my_text_input.component";
 import { MatGridListModule } from '@angular/material/grid-list';
+import { TwitchPlayerComponent } from "./my_player/twitch_player.component";
 
 
 @NgModule({
@@ -18,13 +19,15 @@ import { MatGridListModule } from '@angular/material/grid-list';
         HomeComponent,
         MyImageComponent,
         MyTextInputComponent,
-        LoginComponent
+        LoginComponent,
+        TwitchPlayerComponent
     ],
     exports: [
         MyButtonComponent,
         MyImageComponent,
         MyTextInputComponent,
-        LoginComponent
+        LoginComponent,
+        TwitchPlayerComponent
     ],
     imports: [
         BrowserModule,

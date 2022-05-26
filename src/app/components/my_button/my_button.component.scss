@@ -17,3 +17,13 @@
         cursor: pointer;
     }
 }
+.disabled{
+    background-color: #76787a;
+    &:hover {
+        background-color: #76787a;
+    }
+    label {
+        cursor: auto;
+    }
+    cursor: auto;
+}

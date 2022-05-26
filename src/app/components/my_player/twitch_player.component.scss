@@ -1,0 +1,46 @@
+#twitch-embed {
+    background-color: black;
+
+    ::ng-deep iframe {
+        width: 95vh;
+        height: 75vh;
+    }
+}
+
+#chat_embed {
+    position: absolute;
+    top: 21px;
+    right: 21px;
+    opacity: 0.25;
+}
+
+my-textinput {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+my-button{
+    margin: 15px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.history{
+    position: absolute;
+    left: 0px;
+    top: -80px;
+    background-color: rgb(251, 251, 251);
+    min-height: 150px;
+}
+.history-tile{
+    cursor: pointer;
+    padding: 5px;
+}
+.white{
+    background-color: rgb(236, 236, 236);
+}
+.black{
+    background-color: rgb(140, 140, 140);
+}

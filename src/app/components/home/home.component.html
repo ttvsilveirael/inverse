@@ -1,2 +1,4 @@
-<my-button *ngIf="isLogged" (click)="doLogout()" [label]="'sair'"></my-button>
 <login *ngIf="!isLogged"></login>
+<div class="home-container" *ngIf="isLogged">
+    <twitch-player [canal]="'dizeritus'"></twitch-player>
+</div>
