@@ -1,1 +1,2 @@
-<login></login>
+<my-button *ngIf="isLogged" (click)="doLogout()" [label]="'sair'"></my-button>
+<login *ngIf="!isLogged"></login>

@@ -9,6 +9,7 @@ import { LoginComponent } from "./login/login.component";
 import { MyButtonComponent } from "./my_button/my_button.component";
 import { MyImageComponent } from "./my_image/my_image.component";
 import { MyTextInputComponent } from "./my_text_input/my_text_input.component";
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { MyTextInputComponent } from "./my_text_input/my_text_input.component";
         BrowserAnimationsModule,
         MatButtonModule,
         FormsModule,
-        CommonModule
+        CommonModule, 
+        MatGridListModule
     ],
 })
 export class ComponentsModule { }

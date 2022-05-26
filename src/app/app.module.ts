@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { ComponentsModule } from './components/components.module';
+import { Guard } from './auth/auth-guard.service';
+import { AuthService } from './auth/auth.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,9 +19,10 @@ import { ComponentsModule } from './components/components.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    ComponentsModule
+    ComponentsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [Guard, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

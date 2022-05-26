@@ -1,5 +1,3 @@
 <div class="my-text-input">
-    <input class="input" [type]="IsPassword ? 'password' : 'text'" [(ngModel)]="value">
-    {{value}}
-
+    <input class="input" placeholder="{{placeholder}}" [type]="inputType" [(ngModel)]="textoDigitado">
 </div>

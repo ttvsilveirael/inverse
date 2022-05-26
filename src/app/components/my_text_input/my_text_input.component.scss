@@ -1,21 +1,15 @@
-.input{
-    background-color: rgba(0, 0, 0, 0.33);
-    color: white;
+.my-text-input {
+    margin: auto;
+    width: 100%;
     text-align: center;
-    font-size: 28px;
-    width: 363px;
-    height: 72px;
-    padding: 40px 0 0 0;
-    border-radius: 66px;
-    box-shadow: 0 0 27px #fff;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    margin-left: 75px;
-    &:first-of-type{
-        margin-bottom: 22px;
-        margin-top: 100px;
+
+    input {
+        padding: 10px 15px;
+        border-radius: 23px;
+        width: 100%;
+        max-width: 400px;
+        background-color: #0000001c;
     }
-    
 }
 
 

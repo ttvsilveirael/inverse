@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'my-textinput',
@@ -7,8 +7,25 @@ import { Component, Input } from '@angular/core';
 })
 export class MyTextInputComponent {
 
-  value: String = '';
+  _textoDigitado: String = '';
 
-  @Input("password")
-  IsPassword = false;
+  set textoDigitado(newValue){  
+    this._textoDigitado = newValue;  
+    this.valueChanged.emit(this._textoDigitado);
+  }
+
+  get textoDigitado(){
+    return this._textoDigitado;
+  }
+
+
+  @Input('type')
+  inputType:String = 'text';
+
+  @Input()
+  placeholder:String = '';
+
+  @Output()
+  valueChanged = new EventEmitter();
+  
 }
