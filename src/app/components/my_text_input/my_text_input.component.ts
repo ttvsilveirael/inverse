@@ -19,6 +19,10 @@ export class MyTextInputComponent {
     return this._textoDigitado;
   }
 
+  pressEnter(){
+    console.log(this._textoDigitado);
+  }
+
 
   @Input('type')
   inputType:String = 'text';

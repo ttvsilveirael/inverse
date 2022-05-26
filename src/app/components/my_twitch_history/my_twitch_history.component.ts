@@ -3,7 +3,7 @@ declare var Twitch: any;
 
 @Component({
     selector: 'twitch-history',
-    templateUrl: './twitch-history.component.html',
-    styleUrls: ['./twitch-history.component.scss']
+    templateUrl: './my_twitch_history.component.html',
+    styleUrls: ['./my_twitch_history.component.scss']
 })
 export class TwitchHistoryComponent { }

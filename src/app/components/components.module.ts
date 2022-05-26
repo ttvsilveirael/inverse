@@ -10,7 +10,10 @@ import { MyButtonComponent } from "./my_button/my_button.component";
 import { MyImageComponent } from "./my_image/my_image.component";
 import { MyTextInputComponent } from "./my_text_input/my_text_input.component";
 import { MatGridListModule } from '@angular/material/grid-list';
-import { TwitchPlayerComponent } from "./my_player/twitch_player.component";
+import { TwitchPlayerComponent } from "./my_twitch_player/twitch_player.component";
+import { TwitchChatComponent } from "./my_twitch_chat/my_twitch_chat.component";
+import { TwitchHistoryComponent } from "./my_twitch_history/my_twitch_history.component";
+import { TwitchCardComponent } from "./my_twitch_card/my_twitch_card.component";
 
 
 @NgModule({
@@ -20,14 +23,21 @@ import { TwitchPlayerComponent } from "./my_player/twitch_player.component";
         MyImageComponent,
         MyTextInputComponent,
         LoginComponent,
-        TwitchPlayerComponent
+        TwitchPlayerComponent,
+        TwitchChatComponent,
+        TwitchHistoryComponent,
+        TwitchCardComponent
+    
     ],
     exports: [
         MyButtonComponent,
         MyImageComponent,
         MyTextInputComponent,
         LoginComponent,
-        TwitchPlayerComponent
+        TwitchPlayerComponent,
+        TwitchChatComponent,
+        TwitchHistoryComponent,
+        TwitchCardComponent
     ],
     imports: [
         BrowserModule,
