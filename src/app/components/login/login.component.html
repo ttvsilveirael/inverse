@@ -1,7 +1,7 @@
 <div class="login-container">
     <my-image></my-image>
-    <my-textinput (valueCharged)="setUsername($event)" [type]="'user'"></my-textinput>
-    <my-textinput (valueCharged)="setPassword($event)" type]="'password'"></my-textinput>
-    <my-button (click)="dogLogin()" [label]="'LOGIN'"></my-button>
-    <my-button (click)="dogLogin()" [label]="'Sair'"></my-button>
+    <my-textinput [ngClass]="usernameError ? 'error':''" (valueChanged)="setUsername($event)" [placeholder]="'Usuario'">
+    </my-textinput>
+    <my-textinput [ngClass]="passwordError ? 'error':''" (valueChanged)="setPassword($event)" [placeholder]="'Senha'" [type]="'password'"></my-textinput>
+    <my-button (click)="doLogin()" [label]="'login'"></my-button>
 </div>

@@ -1,5 +1,4 @@
-import { Component, EventEmitter, Input } from '@angular/core';
-
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'my-textinput',
@@ -7,22 +6,31 @@ import { Component, EventEmitter, Input } from '@angular/core';
   styleUrls: ['./my_text_input.component.scss']
 })
 export class MyTextInputComponent {
-  _value: string = '';
-  set value (newValue){
-    this.value= newValue;
-    this.valueCharged.emit(this._value);
+
+  _textoDigitado: String = '';
+
+  @Input('value')
+  set textoDigitado(newValue){  
+    this._textoDigitado = newValue;  
+    this.valueChanged.emit(this._textoDigitado);
   }
 
-  get value(){
-    return this._value;
+  get textoDigitado(){
+    return this._textoDigitado;
   }
- @Input()
-  type:string ='text';
-@Input('type')
-inputType:string ='text';
+
+  pressEnter(){
+    console.log(this._textoDigitado);
+  }
 
 
-@Input()
-valueCharged = new EventEmitter();
+  @Input('type')
+  inputType:String = 'text';
+
+  @Input()
+  placeholder:String = '';
+
+  @Output()
+  valueChanged = new EventEmitter();
   
 }

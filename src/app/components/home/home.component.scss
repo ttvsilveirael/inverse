@@ -1,19 +1,14 @@
-.login {
-    color: yellow;
+.home-container {
+    padding: 20px;
+    width: calc(100% - 40px);
+    height: calc(95vh - 40px);
 }
 
-h1 {
-    background-color: #423ebf;
+twitch-card {
+    margin: 40px;
+    width: 450px;
 }
 
-h1 {
-    color: #fff;
-    font-size: 25px;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-align: center;
-    text-shadow: 0 0 10px black;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+.flex {
+    display: flex;
 }

@@ -28,3 +28,14 @@
         background-color: #4CAF50;
         color: white;
     }
+    
+    .disabled {
+        background-color: #76787a;
+        &:hover {
+            background-color: #76787a;
+        }
+        label {
+            cursor: auto;
+        }
+        cursor: auto;
+    }
