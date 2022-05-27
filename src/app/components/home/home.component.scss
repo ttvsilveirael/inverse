@@ -3,9 +3,10 @@
     width: calc(100% - 40px);
     height: calc(95vh - 40px);
 }
-
-twitch-player {
-    height: 100%;
-    width: 100%;
-    display: block;
+twitch-card{
+    margin: 40px;
+    width: 450px;
+}
+.flex{
+    display: flex;
 }

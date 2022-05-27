@@ -1,4 +1,6 @@
 <login *ngIf="!isLogged"></login>
 <div class="home-container" *ngIf="isLogged">
-    <twitch-card [canal]="'silveirael'"></twitch-card>
+    <div class="flex">
+        <twitch-card [canal]="'silveirael'"></twitch-card>
+    </div>
 </div>

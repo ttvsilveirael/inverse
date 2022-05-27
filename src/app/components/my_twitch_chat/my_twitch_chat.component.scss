@@ -1,0 +1,13 @@
+#chat_embed {
+    top: 21px;
+    right: 21px;
+    width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 20px;
+
+    ::ng-deep iframe {
+        width: 99%;
+    }
+
+}

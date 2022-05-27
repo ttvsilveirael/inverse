@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 import { DomSanitizer } from "@angular/platform-browser";
 declare var Twitch: any;
 
@@ -8,11 +8,15 @@ declare var Twitch: any;
     styleUrls: ['./my_twitch_chat.component.scss']
 })
 export class TwitchChatComponent {
+    @Input()
+    canal: string = 'silveirael';
+
     constructor(public sanitizer: DomSanitizer) {
 
     }
 
     safeUrl() {
-        return this.sanitizer.bypassSecurityTrustResourceUrl('https://www.twitch.tv/embed/silveirael/chat?parent=localhost');
+        return this.sanitizer.bypassSecurityTrustResourceUrl('https://www.twitch.tv/embed/' + this.canal + '/chat?parent=localhost');
     }
+
 }

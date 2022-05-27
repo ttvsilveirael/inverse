@@ -1,6 +1,13 @@
 <div class="twitch-card">
-    <my-textinput [value]="'twitch.tv/' + canal"
-        [placeholder]="'Stream nickname'"></my-textinput>
-    <twitch-player></twitch-player>
-    <twitch-chat></twitch-chat>
+    <div class="header">
+
+    </div>
+    <div class="content">
+        <my-textinput [value]="'twitch.tv/' + canal" [placeholder]="'Stream nickname'"></my-textinput>
+        <twitch-player [canal]="canal"></twitch-player>
+        <twitch-chat [canal]="canal"></twitch-chat>
+    </div>
+    <div class="footer">
+
+    </div>
 </div>

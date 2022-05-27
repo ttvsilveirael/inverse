@@ -6,7 +6,7 @@ declare var Twitch: any;
     templateUrl: './my_twitch_card.component.html',
     styleUrls: ['./my_twitch_card.component.scss']
 })
-export class TwitchCardComponent {
+export class TwitchCardComponent {    
     @Input()
     canal = 'silveirael';
 }
