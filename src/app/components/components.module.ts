@@ -14,6 +14,7 @@ import { TwitchPlayerComponent } from "./my_twitch_player/twitch_player.componen
 import { TwitchChatComponent } from "./my_twitch_chat/my_twitch_chat.component";
 import { TwitchHistoryComponent } from "./my_twitch_history/my_twitch_history.component";
 import { TwitchCardComponent } from "./my_twitch_card/my_twitch_card.component";
+import { MyToolbarComponent } from "./my_toolbar/my_toolbar.component";
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { TwitchCardComponent } from "./my_twitch_card/my_twitch_card.component";
         TwitchPlayerComponent,
         TwitchChatComponent,
         TwitchHistoryComponent,
-        TwitchCardComponent
+        TwitchCardComponent,
+        MyToolbarComponent
     
     ],
     exports: [
@@ -37,7 +39,8 @@ import { TwitchCardComponent } from "./my_twitch_card/my_twitch_card.component";
         TwitchPlayerComponent,
         TwitchChatComponent,
         TwitchHistoryComponent,
-        TwitchCardComponent
+        TwitchCardComponent,
+        MyToolbarComponent
     ],
     imports: [
         BrowserModule,

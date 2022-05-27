@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'my-image',
@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./my_image.component.scss']
 })
 export class MyImageComponent {
+
+  @Input('assetSrc')
+  assetSource = ''
+
+  @Input('src')
+  inputSrc = 'images.jpg';
+
+  get source() { return '../assets/images/' + (this.assetSource == '' ? this.inputSrc : this.assetSource); }
+
+  
 }

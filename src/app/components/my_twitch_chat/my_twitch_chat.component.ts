@@ -12,7 +12,6 @@ export class TwitchChatComponent {
     canal: string = 'silveirael';
 
     constructor(public sanitizer: DomSanitizer) {
-
     }
 
     safeUrl() {
