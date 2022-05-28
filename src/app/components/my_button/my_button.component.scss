@@ -1,5 +1,5 @@
 .button {
-    background-color: #6283a7;
+    background-image: linear-gradient(to top, #fff, #000);
     color: white;
     text-align: center;
     width: 250px;
@@ -8,12 +8,22 @@
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 30px;
-    box-shadow: 2px 4px 7px 3px #eee8e8;
+    box-shadow: 2px 4px 7px 3px #000000;
     cursor: pointer;
     &:hover {
-        background-color: #567da5;
+        background-image: linear-gradient(to bottom, #fff, #000);
     }
     label {
         cursor: pointer;
     }
+}
+.disabled{
+    background-color: #76787a;
+    &:hover {
+        background-color: #76787a;
+    }
+    label {
+        cursor: auto;
+    }
+    cursor: auto;
 }

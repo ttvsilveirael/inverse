@@ -9,6 +9,7 @@ export class MyTextInputComponent {
 
   _textoDigitado: String = '';
 
+  @Input('value')
   set textoDigitado(newValue){  
     this._textoDigitado = newValue;  
     this.valueChanged.emit(this._textoDigitado);
@@ -16,6 +17,10 @@ export class MyTextInputComponent {
 
   get textoDigitado(){
     return this._textoDigitado;
+  }
+
+  pressEnter(){
+    console.log(this._textoDigitado);
   }
 
 

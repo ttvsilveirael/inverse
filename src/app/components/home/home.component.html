@@ -1,2 +1,11 @@
-<my-button *ngIf="isLogged" (click)="doLogout()" [label]="'sair'"></my-button>
 <login *ngIf="!isLogged"></login>
+<div class="home-container" *ngIf="isLogged">
+    <div class="flex">
+        <my-twitch-card [canal]="'silveirael'"></my-twitch-card>
+        <my-twitter-card></my-twitter-card>
+        <my-youtube-player></my-youtube-player>
+        <my-map></my-map>
+    </div>
+
+
+</div>

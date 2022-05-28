@@ -1,4 +1,3 @@
-
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -11,5 +10,8 @@ export class MyButtonComponent {
     //Recebe a label do botão
     @Input()
     label: String = '';
+
+    @Input()
+    disabled = false;
 
 }

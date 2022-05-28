@@ -7,17 +7,19 @@ my-textinput {
     display: block;
     padding: 40px;
     margin-top: 21vh;
-    height: 200px;
+    height: 250px;
     width: 520px;
-    background: #c3c1c1;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), #fff, #000);
     margin: 21vh auto;
     border-radius: 30px;
+    box-shadow: 10px 10px 20px #000;
 }
 
 my-button {
     margin-top: 30px;
     display: block;
 }
-.error{
-    background: #851111ad;
+.error {
+    background: #ff0000;
+    border-radius: 30px;
 }
