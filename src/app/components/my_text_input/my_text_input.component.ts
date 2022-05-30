@@ -10,23 +10,30 @@ export class MyTextInputComponent {
   _textoDigitado: String = '';
 
   @Input('value')
-  set textoDigitado(newValue){  
-    this._textoDigitado = newValue;  
+  set textoDigitado(newValue) {
+    this._textoDigitado = newValue;
     this.valueChanged.emit(this._textoDigitado);
   }
 
-  get textoDigitado(){
+  get textoDigitado() {
     return this._textoDigitado;
+  }
+
+  pressEnter() {
+    this.enterEvent.emit();
   }
 
 
   @Input('type')
-  inputType:String = 'text';
+  inputType: String = 'text';
 
   @Input()
-  placeholder:String = '';
+  placeholder: String = '';
 
   @Output()
   valueChanged = new EventEmitter();
-  
+
+  @Output()
+  enterEvent = new EventEmitter();
+
 }

@@ -3,7 +3,7 @@ declare var Twitch: any;
 
 @Component({
     selector: 'twitch-chat',
-    templateUrl: './twitch_chat.component.html',
-    styleUrls: ['./twitch_chat.component.scss']
+    templateUrl: './my_twitch_chat.component.html',
+    styleUrls: ['./my_twitch_chat.component.scss']
 })
 export class TwitchChatComponent { }
