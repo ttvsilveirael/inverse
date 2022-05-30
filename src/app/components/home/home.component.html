@@ -1,4 +1,8 @@
-<div>
-    <h1>Bem vindo ao role </h1>
+<login *ngIf="!isLogged"></login>
+<div class="home-container" *ngIf="isLogged">
+    <div class="flex">
+        <twitch-card [canal]="'dizeritus'"></twitch-card>
+        <twitter></twitter>
+        <youtube></youtube>
+    </div>
 </div>
-<login></login>

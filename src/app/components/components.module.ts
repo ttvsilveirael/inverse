@@ -1,4 +1,4 @@
-mport { CommonModule } from "@angular/common";
+import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
@@ -13,8 +13,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { TwitchPlayerComponent } from "./my_twitch_player/twitch_player.component";
 import { TwitchChatComponent } from "./my_twitch_chat/my_twitch_chat.component";
 import { TwitchHistoryComponent } from "./my_twitch_history/my_twitch_history.component";
-import { TwitchCardComponent } from "./my_twitch_card/my_twitch_card.component";
-import { CommonModule } from "@angular/common";
+import { TwitchCardComponent } from "./twitch-card/my_twitch_card.component";
+import { TwitterComponent } from "./twitter/twitter.component";
+import { YoutubeComponent } from "./youtubis/youtube.component";
+
 
 
 @NgModule({
@@ -27,7 +29,10 @@ import { CommonModule } from "@angular/common";
         TwitchChatComponent,
         TwitchHistoryComponent,
         TwitchPlayerComponent,
-        
+        HomeComponent,
+        TwitterComponent,
+        YoutubeComponent,
+    
     ],
     exports: [
         MyButtonComponent,
@@ -37,7 +42,11 @@ import { CommonModule } from "@angular/common";
         TwitchPlayerComponent,
         TwitchChatComponent,
         TwitchHistoryComponent,
-        TwitchCardComponent
+        TwitchCardComponent,
+        HomeComponent,
+        TwitterComponent,
+        YoutubeComponent,
+    
     ],
     imports: [
         BrowserModule,
@@ -48,4 +57,4 @@ import { CommonModule } from "@angular/common";
         MatGridListModule
     ],
 })
-export class ComponentsModules { }
+export class ComponentsModule { }
