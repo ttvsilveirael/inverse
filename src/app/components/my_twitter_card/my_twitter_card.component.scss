@@ -1,14 +1,19 @@
 .twitter-card {
     width: 100%;
     max-width: 520px;
-    height: 927px;
-    background-image: linear-gradient(to top, rgb(0, 0, 0), #fff, #000);
+    height: 975px;
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(0, 0, 0), rgb(255, 255, 255));
     border: solid 1px rgb(85, 84, 84);
     border-radius: 35px;
     padding: 20px;
     position: relative;    
-    overflow: overlay;
     box-shadow: 10px 10px 10px rgb(105, 105, 105);
+
+}
+
+.twitter-components {
+    height: 100%;
+    overflow: hidden;
 
 }
 
@@ -25,4 +30,14 @@
     background-image: linear-gradient(to top, rgb(0, 0, 0), #fff, #000);
     border-radius: 25px;
     border: 0.5px solid rgb(255, 255, 255);
+}
+
+.twitter-timeline {
+
+}
+
+.twitter-container {
+    overflow: auto;
+    height: 100%;
+    border-radius: 25px;
 }

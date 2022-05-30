@@ -8,5 +8,8 @@ declare var Twitch: any;
 })
 export class MyTwitchCardComponent {    
     @Input()
-    canal = 'silveirael';
+    canal = 'victoradab';
+    
+    @Input()
+    link = 'https://www.twitch.tv/victoradab';
 }

@@ -18,6 +18,9 @@ import { MyToolbarComponent } from "./my_toolbar/my_toolbar.component";
 import { MyTwitterCardComponent } from "./my_twitter_card/my_twitter_card.component";
 import { MyYoutubePlayerComponent } from "./my_youtube_player/my_youtube_player.component";
 import { MyMapComponent } from "./my_map/my_map.component";
+import { MyButtonFullscreenComponent } from "./my_button_fullscreen/my_button_fullscreen.component";
+import { YoutubeFullscreenComponent } from "./youtube_fullscreen/youtube_fullscreen.component";
+import { TwitchFullscreenComponent } from "./twitch_fullscreen/twitch_fullscreen.component";
 
 
 
@@ -35,7 +38,10 @@ import { MyMapComponent } from "./my_map/my_map.component";
         MyTwitchCardComponent,
         MyTwitterCardComponent,
         MyYoutubePlayerComponent,
-        MyMapComponent
+        MyMapComponent,
+        MyButtonFullscreenComponent,
+        YoutubeFullscreenComponent,
+        TwitchFullscreenComponent
 
     ],
     exports: [
@@ -50,7 +56,10 @@ import { MyMapComponent } from "./my_map/my_map.component";
         MyToolbarComponent,
         MyTwitterCardComponent,
         MyYoutubePlayerComponent,
-        MyMapComponent
+        MyMapComponent,
+        MyButtonFullscreenComponent,
+        YoutubeFullscreenComponent,
+        TwitchFullscreenComponent
     ],
     imports: [
         BrowserModule,
