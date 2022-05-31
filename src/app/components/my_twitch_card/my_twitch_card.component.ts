@@ -1,4 +1,5 @@
 import { Component, Input } from "@angular/core";
+import { Router } from "@angular/router";
 declare var Twitch: any;
 
 @Component({
@@ -12,4 +13,10 @@ export class MyTwitchCardComponent {
     
     @Input()
     link = 'https://www.twitch.tv/victoradab';
+
+    abrirPlayer(){
+        this.router.navigate(['/twitch'])
+        
+        }
+        constructor(public router: Router) { }
 }
