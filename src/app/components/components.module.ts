@@ -9,28 +9,52 @@ import { LoginComponent } from "./login/login.component";
 import { MyButtonComponent } from "./my_button/my_button.component";
 import { MyImageComponent } from "./my_image/my_image.component";
 import { MyTextInputComponent } from "./my_text_input/my_text_input.component";
+import { MatGridListModule } from '@angular/material/grid-list';
+import { TwitchPlayerComponent } from "./my_twitch_player/twitch_player.component";
+import { TwitchChatComponent } from "./my_twitch_chat/my_twitch_chat.component";
+import { TwitchHistoryComponent } from "./my_twitch_history/my_twitch_history.component";
+import { TwitchCardComponent } from "./twitch-card/my_twitch_card.component";
+import { TwitterComponent } from "./twitter/twitter.component";
+import { YoutubeComponent } from "./youtubis/youtube.component";
+
 
 
 @NgModule({
     declarations: [
         MyButtonComponent,
-        HomeComponent,
         MyImageComponent,
         MyTextInputComponent,
-        LoginComponent
+        LoginComponent,
+        TwitchCardComponent,
+        TwitchChatComponent,
+        TwitchHistoryComponent,
+        TwitchPlayerComponent,
+        HomeComponent,
+        TwitterComponent,
+        YoutubeComponent,
+    
     ],
     exports: [
         MyButtonComponent,
         MyImageComponent,
         MyTextInputComponent,
-        LoginComponent
+        LoginComponent,
+        TwitchPlayerComponent,
+        TwitchChatComponent,
+        TwitchHistoryComponent,
+        TwitchCardComponent,
+        HomeComponent,
+        TwitterComponent,
+        YoutubeComponent,
+    
     ],
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
         MatButtonModule,
         FormsModule,
-        CommonModule
+        CommonModule, 
+        MatGridListModule
     ],
 })
 export class ComponentsModule { }
